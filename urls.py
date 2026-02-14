@@ -1,6 +1,10 @@
 import requests
 import re
 
+url="https://api-sg.aliexpress.com/sync?"  # endpoint url
+
+
+
 
 def redrect_url(target_url):
     responce = requests.get(target_url,allow_redirects=True)
