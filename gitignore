@@ -1,0 +1,10 @@
+# ملفات البيئة
+.env
+
+# ملفات الجلسات (Telethon)
+*.session
+*.session-journal
+
+# ملفات بايثون المؤقتة
+__pycache__/
+*.pyc
