@@ -1,0 +1,13 @@
+# تجاهل ملفات البيئة
+.env
+
+# تجاهل ملفات جلسات Telethon
+*.session
+*.session-journal
+
+# تجاهل ملفات بايثون المؤقتة
+__pycache__/
+*.pyc
+
+# إعدادات VS Code
+.vscode/
