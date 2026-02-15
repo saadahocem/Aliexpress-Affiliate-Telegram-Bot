@@ -40,8 +40,12 @@ async def main():
     
         f,product_id=urls.redrect_url(url_from_bot[0])
     
-        title ,commission , rating, main_image,target_price,promotion_link =generator.get_product_summary(product_id)
-     
+        data=generator.get_product_summary(product_id)
+        if not data :
+            await event.reply("❌ Failed to fetch product data")
+            return
+        title ,commission , rating, main_image,target_price,promotion_link  = data
+
         genrated_link = generator.link_generate(promotion_link)
         message = (
             f"🛍️ المنتج: {title}\n\n"
